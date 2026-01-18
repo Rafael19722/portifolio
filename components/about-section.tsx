@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Code2, MapPin, GraduationCap } from "lucide-react";
+import { Code2, MapPin, GraduationCap, User } from "lucide-react";
 
 const stats = [
   {
@@ -23,13 +23,23 @@ export function AboutSection() {
   return (
     <section id="about" className="py-24 px-6 bg-card/50">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-6">
-            More Than Code
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto text-pretty">
-            Currently a Computer Science student at UNIFACS. My background in technical support taught me empathy and rapid troubleshooting under pressure. I don't just write code; I build systems that work for people.
-          </p>
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
+          {/* Avatar placeholder */}
+          <div className="flex-shrink-0">
+            <div className="w-32 h-32 rounded-full border-2 border-border bg-secondary flex items-center justify-center overflow-hidden">
+              {/* Replace with: <img src="/your-photo.jpg" alt="Rafael Rangel" className="w-full h-full object-cover" /> */}
+              <User className="w-12 h-12 text-muted-foreground" />
+            </div>
+          </div>
+          
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-4">
+              More Than Code
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-xl text-pretty">
+              Currently a Computer Science student at UNIFACS. My background in technical support taught me empathy and rapid troubleshooting under pressure. I don't just write code; I build systems that work for people.
+            </p>
+          </div>
         </div>
 
         <div className="grid sm:grid-cols-3 gap-6">
