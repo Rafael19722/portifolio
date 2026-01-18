@@ -27,7 +27,7 @@ export function AboutSection() {
           {/* Avatar placeholder */}
           <div className="flex-shrink-0">
             <div className="w-32 h-32 rounded-full border-2 border-border bg-secondary flex items-center justify-center overflow-hidden">
-              <img src="..\public\face.jpeg" alt="Rafael Rangel" className="w-full h-full object-cover"/>
+              <img src="/face.jpeg" alt="Rafael Rangel" className="w-full h-full object-cover"/>
             </div>
           </div>
           
