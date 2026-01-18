@@ -25,8 +25,8 @@ export function TechMarquee() {
           {[...technologies, ...technologies, ...technologies].map((tech, index) => (
             <Badge
               key={`${tech}-${index}`}
-              variant="secondary"
-              className="px-4 py-2 text-sm font-medium whitespace-nowrap bg-secondary text-secondary-foreground border border-border hover:border-primary/50 transition-colors"
+              variant="outline"
+              className="px-4 py-2 text-sm font-mono whitespace-nowrap bg-transparent text-muted-foreground border-border/60 hover:text-foreground hover:border-border transition-colors"
             >
               {tech}
             </Badge>
