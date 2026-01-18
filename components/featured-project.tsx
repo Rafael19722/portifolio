@@ -85,45 +85,34 @@ export function FeaturedProject() {
             </div>
           </div>
 
-          {/* Right Side - Architecture Diagram */}
+          {/* Right Side - Blueprint/Schematic Container */}
           <div className="relative">
-            <div className="aspect-[4/3] rounded-lg border border-border bg-card overflow-hidden">
-              <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:2rem_2rem]" />
-              <div className="relative h-full flex flex-col items-center justify-center p-8">
-                <div className="text-center space-y-6">
-                  {/* Architecture visualization */}
-                  <div className="grid grid-cols-3 gap-4 mb-8">
-                    <div className="col-span-3 p-3 rounded border border-border bg-secondary/50 text-center">
-                      <span className="text-xs text-muted-foreground">Client App</span>
-                    </div>
-                    <div className="col-span-3 flex justify-center">
-                      <div className="w-px h-6 bg-border" />
-                    </div>
-                    <div className="col-span-3 p-3 rounded border border-primary/30 bg-primary/5 text-center">
-                      <span className="text-xs text-primary">NestJS API Gateway</span>
-                    </div>
-                    <div className="col-span-3 flex justify-center gap-8">
-                      <div className="w-px h-6 bg-border" />
-                      <div className="w-px h-6 bg-border" />
-                    </div>
-                    <div className="p-3 rounded border border-border bg-secondary/50 text-center">
-                      <span className="text-xs text-muted-foreground">RabbitMQ</span>
-                    </div>
-                    <div className="p-3 rounded border border-border bg-secondary/50 text-center">
-                      <span className="text-xs text-muted-foreground">PostgreSQL</span>
-                    </div>
-                    <div className="p-3 rounded border border-border bg-secondary/50 text-center">
-                      <span className="text-xs text-muted-foreground">Redis</span>
-                    </div>
-                    <div className="col-span-3 flex justify-center">
-                      <div className="w-px h-6 bg-border" />
-                    </div>
-                    <div className="col-span-3 p-3 rounded border border-border bg-secondary/50 text-center">
-                      <span className="text-xs text-muted-foreground">Azure Cloud Infrastructure</span>
-                    </div>
+            {/* Blueprint-style container with 16:9 aspect ratio */}
+            <div className="aspect-video rounded-lg border-2 border-dashed border-primary/30 bg-card/80 overflow-hidden relative">
+              {/* Blueprint grid background */}
+              <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(16,185,129,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(16,185,129,0.03)_1px,transparent_1px)] bg-[size:20px_20px]" />
+              {/* Corner markers */}
+              <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-primary/40" />
+              <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-primary/40" />
+              <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-primary/40" />
+              <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-primary/40" />
+              
+              {/* Placeholder content */}
+              <div className="relative h-full flex flex-col items-center justify-center p-6">
+                <div className="text-center space-y-3">
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded border border-primary/30 bg-primary/5">
+                    <Server className="w-6 h-6 text-primary/60" />
                   </div>
-                  <p className="text-sm text-muted-foreground">Architecture Diagram</p>
+                  <div className="space-y-1">
+                    <p className="text-sm font-medium text-foreground/80">Architecture Diagram</p>
+                    <p className="text-xs text-muted-foreground">Replace with your system diagram image</p>
+                  </div>
                 </div>
+              </div>
+              
+              {/* Blueprint label */}
+              <div className="absolute bottom-3 right-3 px-2 py-1 bg-background/80 border border-border rounded text-[10px] font-mono text-muted-foreground uppercase tracking-wider">
+                System Blueprint v1.0
               </div>
             </div>
           </div>
