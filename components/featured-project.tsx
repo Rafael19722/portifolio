@@ -97,18 +97,7 @@ export function FeaturedProject() {
               <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-primary/40" />
               <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-primary/40" />
               
-              {/* Placeholder content */}
-              <div className="relative h-full flex flex-col items-center justify-center p-6">
-                <div className="text-center space-y-3">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded border border-primary/30 bg-primary/5">
-                    <Server className="w-6 h-6 text-primary/60" />
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-sm font-medium text-foreground/80">Architecture Diagram</p>
-                    <p className="text-xs text-muted-foreground">Replace with your system diagram image</p>
-                  </div>
-                </div>
-              </div>
+              <img src="/diagram.png" alt="the diagram" />
               
               {/* Blueprint label */}
               <div className="absolute bottom-3 right-3 px-2 py-1 bg-background/80 border border-border rounded text-[10px] font-mono text-muted-foreground uppercase tracking-wider">
