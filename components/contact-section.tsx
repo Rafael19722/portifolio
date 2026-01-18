@@ -5,17 +5,17 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/rafael-rangel1/",
   },
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com",
+    href: "https://github.com/Rafael19722",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    href: "https://wa.me/",
+    href: "https://wa.me/71985280372",
   },
 ];
 
