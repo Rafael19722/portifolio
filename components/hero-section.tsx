@@ -10,9 +10,19 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Subtle grid background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.05)_0%,transparent_70%)]" />
+      {/* Technical dot grid background */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:24px_24px]" />
+      {/* Subtle circuit-like horizontal lines */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="absolute top-1/4 left-0 right-0 h-px bg-gradient-to-r from-transparent via-foreground to-transparent" />
+        <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-foreground to-transparent" />
+        <div className="absolute top-3/4 left-0 right-0 h-px bg-gradient-to-r from-transparent via-foreground to-transparent" />
+      </div>
+      {/* Corner accent marks */}
+      <div className="absolute top-8 left-8 w-16 h-16 border-l border-t border-border/50" />
+      <div className="absolute top-8 right-8 w-16 h-16 border-r border-t border-border/50" />
+      <div className="absolute bottom-8 left-8 w-16 h-16 border-l border-b border-border/50" />
+      <div className="absolute bottom-8 right-8 w-16 h-16 border-r border-b border-border/50" />
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground mb-6 text-balance">
