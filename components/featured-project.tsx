@@ -72,13 +72,13 @@ export function FeaturedProject() {
 
             <div className="flex gap-3 pt-2">
               <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.alertacidadaoapi.com/api" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-3.5 w-3.5" />
                   Live API
                 </a>
               </Button>
               <Button asChild size="sm" variant="outline" className="border-border hover:bg-secondary bg-transparent">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/copa-origem/alerta-cidadao-api" target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-3.5 w-3.5" />
                   Github
                 </a>
